@@ -1,0 +1,9 @@
+<div>
+    <label for="">UserName:</label>
+    <input #user type="text" name="" id=""><br>
+    <label for="">Password:</label>
+    <input #pass type="text"><br>
+    <button (click)="OnSubmit(user.value,pass.value)">Submit</button>
+    <button (click)="OnVerify()" >Verify</button>
+    <p>{{(username | json) || "no name"}}</p>
+  </div>
